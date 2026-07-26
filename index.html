@@ -98,17 +98,17 @@
 <body>
 
 <div class="container">
-  <h1>Randomizer App</h1>
+  <h1>靠主同行</h1>
 
   <div class="btn-group">
-    <button onclick="randomizeCategoryA()">Random Category A</button>
-    <button class="btn-secondary" onclick="randomizeNumber()">Random 1–10</button>
+    <button onclick="randomizeCategoryA()">Task</button>
+    <button class="btn-secondary" onclick="randomizeNumber()">Points</button>
   </div>
 
   <div class="result-box">
     <div class="result-title" id="result-type">Result</div>
     <div class="result-value" id="result-display">Click a button</div>
-    <div class="result-description" id="result-description">Select an option above to generate a weighted random item.</div>
+    <div class="result-description" id="result-description">Select an option above.</div>
   </div>
 </div>
 
@@ -178,16 +178,16 @@
 
   // 2. Number 1–10 Configuration
   const numberConfig = [
-    { name: "Number 1", weight: 10.55 },
-    { name: "Number 2", weight: 10.55 },
-    { name: "Number 3", weight: 10.55 },
-    { name: "Number 4", weight: 10.55 },
-    { name: "Number 5", weight: 10.55 },
-    { name: "Number 6", weight: 10.55 },
-    { name: "Number 7", weight: 10.55 },
-    { name: "Number 8", weight: 10.55 },
-    { name: "Number 9", weight: 10.55 },
-    { name: "Number 10", weight: 5.00 }
+    { name: "1", weight: 17 },
+    { name: "2", weight: 17 },
+    { name: "3", weight: 17 },
+    { name: "4", weight: 17 },
+    { name: "5", weight: 17 },
+    { name: "6", weight: 10 },
+    { name: "7", weight: 4 },
+    { name: "8", weight: 3 },
+    { name: "9", weight: 2 },
+    { name: "10", weight: 1.00 }
   ];
 
   // ==========================================
