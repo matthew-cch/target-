@@ -121,73 +121,73 @@
   const categoryAConfig = [
     { 
       name: "No Task", 
-      description: "Take a break! No action required for this round.", 
+      description: "揾下一個導師！", 
       weight: 50 
     },
     { 
-      name: "Task 1: Organize Inbox", 
-      description: "Clear unread emails and file important communications.", 
+      name: "Task 1: 搖搖", 
+      description: "每個組員要成功放和收搖搖一次", 
       weight: 5 
     },
     { 
-      name: "Task 2: Quick Cleanup", 
-      description: "Tidy up your physical desktop and digital downloads folder.", 
+      name: "Task 2: 平板支撐", 
+      description: "全組一齊平板支撐3分鐘", 
       weight: 5 
     },
     { 
-      name: "Task 3: Update Documentation", 
-      description: "Review and update active project notes or specs.", 
+      name: "Task 3: 無影櫈", 
+      description: "全組一齊無影櫈3分鐘", 
       weight: 5 
     },
     { 
-      name: "Task 4: Code Review", 
-      description: "Inspect open pull requests or refactor a module.", 
+      name: "Task 4: 讚美", 
+      description: "講出負責導師的10個優點，不可重複", 
       weight: 5 
     },
     { 
-      name: "Task 5: Plan Next Sprint", 
-      description: "Outline top priorities and milestones for the upcoming week.", 
+      name: "Task 5: 閃避盤", 
+      description: "要連續避開導師5次閃避盤攻擊", 
       weight: 5 
     },
     { 
-      name: "Task 6: Stretch & Hydrate", 
-      description: "Get up, drink a glass of water, and move around for 5 minutes.", 
+      name: "Task 6: 跳繩", 
+      description: "全組跳繩合共300次，每個人都要參與", 
       weight: 5 
     },
     { 
-      name: "Task 7: Bug Fix", 
-      description: "Address the highest priority bug on the backlog.", 
+      name: "Task 7: 疊杯", 
+      description: "疊杯塔，底為8隻杯", 
       weight: 5 
     },
     { 
-      name: "Task 8: Research Topic", 
-      description: "Spend 15 minutes exploring a new tool or technology.", 
+      name: "Task 8: 乒乓球", 
+      description: "用營刊將乒乓球彈150下，每個人都要參與", 
       weight: 5 
     },
     { 
-      name: "Task 9: Backup Files", 
-      description: "Ensure local projects and key files are synced to cloud storage.", 
+      name: "Task 9: 飛營刊", 
+      description: "每個人將營刊飛到5張櫈外，營刊要連在一起", 
       weight: 5 
     },
     { 
-      name: "Task 10: Team Check-in", 
-      description: "Send a quick status update to team members or collaborators.", 
+      name: "Task 10: 背著你走", 
+      description: "背著你的組員在活動室走5個來回", 
       weight: 5 
     }
   ];
 
   // 2. Number 1–10 Configuration
   const numberConfig = [
-    { name: "1", weight: 17 },
-    { name: "2", weight: 17 },
-    { name: "3", weight: 17 },
-    { name: "4", weight: 17 },
-    { name: "5", weight: 17 },
-    { name: "6", weight: 10 },
-    { name: "7", weight: 4 },
-    { name: "8", weight: 3 },
-    { name: "9", weight: 2 },
-    { name: "10", weight: 1.00 }
+    { name: "1", weight: 10 },
+    { name: "2", weight: 10 },
+    { name: "3", weight: 10 },
+    { name: "4", weight: 10 },
+    { name: "5", weight: 10 },
+    { name: "6", weight: 15 },
+    { name: "7", weight: 12 },
+    { name: "8", weight: 10 },
+    { name: "9", weight: 8 },
+    { name: "10", weight: 5.00 }
   ];
 
   // ==========================================
@@ -211,7 +211,7 @@
   // Button 1 Handler: Category A
   function randomizeCategoryA() {
     const item = getWeightedRandomItem(categoryAConfig);
-    document.getElementById("result-type").textContent = "Category A Result";
+    document.getElementById("result-type").textContent = "Task";
     document.getElementById("result-display").textContent = item.name;
     document.getElementById("result-description").textContent = item.description;
   }
@@ -219,7 +219,7 @@
   // Button 2 Handler: Number 1–10
   function randomizeNumber() {
     const item = getWeightedRandomItem(numberConfig);
-    document.getElementById("result-type").textContent = "Number Result";
+    document.getElementById("result-type").textContent = "Point";
     document.getElementById("result-display").textContent = item.name;
     document.getElementById("result-description").textContent = item.description;
   }
